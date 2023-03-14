@@ -1,15 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
-import New from './New';
-import Hello from './Hello';
-import Message from './Message';
+import React, { Component } from 'react'
+import Form from './component/Form';
+import Fragment from './component/Fragment';
+import Refdemo from './component/Refdemo';
+//import Home from './pages/Home'
+//import About from './pages/About'
+import Stylesheet from './component/Stylesheet'
+import Table from './component/Table';
 
-function App() {
-  return (
-    <div className="App">
-     <Message/>
-    </div>
-  );
+
+class App extends Component {
+ 
+  render() {
+    return (
+      <>
+      {/*<Fragment />
+      <Form/>
+      <Table/>
+    */}
+    <Refdemo/>
+      </>
+      );
+    }
+
 }
 
-export default App;
+export default App
